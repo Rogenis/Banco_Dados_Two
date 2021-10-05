@@ -1,0 +1,21 @@
+﻿Ordem das arvores de busca
+
+Primario: Chave - ID
+	Ponteiro: 8 Bytes
+	chave: 4 Bytes
+	
+	(2m+1)*8 + 2m*4 <= 4096
+	16m + 8 + 8m <=4096
+	14m <= 4088
+	m = 4088/14 = 171 (teto)
+	
+Secundario: Chave - Titulo
+	Ponteiro: 8 Bytes
+	chave: 300 Bytes
+	
+	(2m+1)*8 + 2m*300 <= 4096
+	16m + 8 + 600m <=4096
+	616m <= 4088
+	m = 4088/616 = 7 (teto)
+	
+	
